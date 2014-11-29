@@ -25,6 +25,7 @@ allprojects {
 
 	repositories {
 		mavenCentral()
+		jcenter()
 		maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 		maven { url "https://oss.sonatype.org/content/repositories/releases/" }
 	}
@@ -68,7 +69,7 @@ project(":android") {
 		natives "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-x86"
 		compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
 		compile "com.badlogicgames.gdx:gdx-controllers-android:$gdxVersion"
-		compile 'org.codehaus.groovy:groovy:2.4.0-beta-3:grooid'
+		compile 'org.codehaus.groovy:groovy:2.4.0-beta-4'
 	}
 }
 
@@ -82,7 +83,7 @@ project(":core") {
 		compile "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion"
 		compile "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
 		compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
-		compile 'org.codehaus.groovy:groovy:2.4.0-beta-3:grooid'
+		compile 'org.codehaus.groovy:groovy:2.4.0-beta-4'
 	}
 }
 
