@@ -115,7 +115,8 @@ class GameScreen implements Screen {
 		Iterator<Rectangle> iter = raindrops.iterator()
 		while (iter.hasNext()) {
 			Rectangle raindrop = iter.next()
-			raindrop.y -= 200 * Gdx.graphics.getDeltaTime()
+			raindrop.y -= 200 * Gdx.graphics.getDeltaTime() // broken
+			// raindrop.y = raindrop.y - 200 * Gdx.graphics.getDeltaTime() // fixes it
 			if (raindrop.y + 64 < 0)
 				iter.remove()
 			if (raindrop.overlaps(bucket)) {
