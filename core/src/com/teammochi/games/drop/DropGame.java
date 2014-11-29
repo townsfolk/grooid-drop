@@ -8,11 +8,13 @@ public class DropGame extends Game {
 
 	public SpriteBatch batch;
 	public BitmapFont font;
+	public GameScreen gameScreen;
 
 	public void create() {
 		batch = new SpriteBatch();
 		//Use LibGDX's default Arial font.
 		font = new BitmapFont();
+		gameScreen = new GameScreen(this);
 		this.setScreen(new MainMenuScreen(this));
 	}
 

@@ -145,12 +145,13 @@ public class GameScreen implements Screen {
 
 	@Override
 	public void pause() {
-
+		rainMusic.pause();
+		dropGame.setScreen(new ResumeScreen(dropGame));
 	}
 
 	@Override
 	public void resume() {
-
+		rainMusic.play();
 	}
 
 	@Override
